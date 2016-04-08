@@ -1,0 +1,25 @@
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: blue;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+
+img {
+	position: center;
+    width: 60%;
+    height: auto;
+}
+
+body
+{
+background: black; 
+}
+
+.left {
+    float: right;
+    width: 200px;
+}
