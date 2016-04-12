@@ -1,0 +1,15 @@
+#header-image{
+	background-repeat: no-repeat;
+	/*background-image:img("puppy.jpg");*/
+}
+/*Show larger image when your on a big screen*/
+@media screen and (min-width: 1200px) {
+	#header-image {
+		background-image:url('larger-image.gif');
+	}
+}
+@media only screen and (min-width: 1024px){
+	body:after{
+		content: "1024 and up";
+	}
+}
