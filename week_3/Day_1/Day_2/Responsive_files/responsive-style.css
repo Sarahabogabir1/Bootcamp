@@ -1,0 +1,14 @@
+.column {
+	background-color:purple;
+	color:white;
+	border: 1px dotted white;
+	font-size: 30px;
+	float:left;
+	width:100%;
+}
+
+@media screen and (min-width: 1200px) {
+	.column {
+		width: 100%;
+	}
+}
