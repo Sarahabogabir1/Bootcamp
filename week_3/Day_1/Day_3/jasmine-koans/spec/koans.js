@@ -131,7 +131,8 @@ describe("the JavaScript language", function(){
         function example(){
             return 'some example';
         }
-        expect(example()).toEqual("some example");
+
+        expect(example()).toEqual('some example');
     });
 
     it("can declare anonymous functions", function(){
@@ -139,7 +140,7 @@ describe("the JavaScript language", function(){
             return a + b;
         };
 
-        expect(typeof(someVar)).toBe("function");
+        expect(typeof(someVar)).toBe('function');
         expect(someVar(1,1)).toBe(2);
     });
 
@@ -150,8 +151,16 @@ describe("the JavaScript language", function(){
  
         var result = example(2);
 
-        expect(result[1]).toEqual();
+        expect(result[1]).toEqual(4);
     });
+    // it("may return anything", function(){
+    //     function example(arg){
+    //         return [arg, arg * 2, arg * 3]; 
+    //     }
+ 
+    //     var result = example(2);
+    //     expect(result[1]).toBe(4);
+    // });
 
     it("may return arrays that contains functions and so on", function(){
         function example(){
