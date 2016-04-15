@@ -1,0 +1,11 @@
+var fs = require("fs") //declare an object, fs comes with NODE
+//server side code, backend 
+
+function print (error, content) {
+	if (error) {
+		console.log("oh no! Error!", error);
+	} else {
+		console.log ("succes!",content);
+	}
+}
+fs.readfile("file.txt", "utf8", print)
