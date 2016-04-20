@@ -13,6 +13,12 @@ Rails.application.routes.draw do
   get '/projects', to: 'projects#index'
 
   get '/projects/:id', to: 'projects#show'
+  #:id is equal to any number you decide to use
+  get '/projects/new', to: 'projects#new'
+
+  post '/projects/', to: 'projects#new'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
