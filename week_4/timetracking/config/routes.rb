@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-	get '/', to: 'site#home'
+	get '/', to: 'site#home' #site is a controller
 	
 	get '/contact', to: 'site#contact'
 	
@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 	post '/calculate', to: 'site#calculate'
 
   get '/projects', to: 'projects#index'
+
+  get '/projects/:id', to: 'projects#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
