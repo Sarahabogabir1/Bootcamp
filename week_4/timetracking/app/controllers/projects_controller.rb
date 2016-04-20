@@ -7,8 +7,10 @@ class ProjectsController < ApplicationController
 		@projects = Project.last_created_projects
 	end 
 
-	def show
-		@my_project = Project.find(params[:id])
-		
+	def show #name of the view
+		@my_project = Project.find_by(params[:id])
+		 # get '/projects/:id', to: 'projects#show'
+		 unless @my_project
+		render "no_projects_found"
 	end
 end
