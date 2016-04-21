@@ -22,6 +22,10 @@ Rails.application.routes.draw do
   get '/projects/:project_id/time_entries', to: 'time_entries#index' #last one has to match the controller
   # that means time entries is nested within time projects
 
+  get '/projects/:project_id/time_entries/new', to: 'time_entries#new' #add a new mathod  time entries controller
+
+  post '/projects:project_id/time_entries/', to: 'time_entries#create', as: :project_time_entries #missing controller routes
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
