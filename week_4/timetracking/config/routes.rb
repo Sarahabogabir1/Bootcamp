@@ -16,7 +16,11 @@ Rails.application.routes.draw do
   #:id is equal to any number you decide to use
   get '/projects/new', to: 'projects#new'
 
-  post '/projects/', to: 'projects#new'
+  post '/projects', to: 'projects#create'
+  #will redirect to show page once user submits
+
+  get '/projects/:project_id/time_entries', to: 'time_entries#index' #last one has to match the controller
+  # that means time entries is nested within time projects
 
 
 
