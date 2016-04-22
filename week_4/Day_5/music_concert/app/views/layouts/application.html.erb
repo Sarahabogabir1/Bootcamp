@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>MusicConcert</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
+<header>
+<!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Concerts <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+   <li><a href="#">Today's Events</a></li>
+    <li><a href="#">Tomorrows</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+
 <body>
 
-<header>
-<h1><marquee>ConcertHub</marquee></h1>
-</header>
+
 <%= yield %>
 
 <div>
-<h3> Contact us to get more concert information </h3>
+<p> @all rights reserved</p>
 </div>
 </body>
 </html>

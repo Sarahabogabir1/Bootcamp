@@ -1,14 +1,77 @@
-<h1> List of concerts today <h1>
 
-<ul>
-<% @concerts.each do |shows| %>
-	<li>
-	<%= %>    
-	<li>
-<%end%>
-<ul>
+<header>
+
+</header>
+
+
+<div class="jumbotron">
+  <h1>ConcertHub</h1>
+  <p></p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Events</a></p>
+</div>
 
 <div>
-<img src="/assets/epic_concert.gif"
-	alt="Epic concert of people"
+<ul>
+	<% @concerts_today.each do |shows| %>
+		<li>
+		<%= shows.artist %>
+		<%= shows.venue %> 
+		<%= shows.city %> 
+		<%= shows.date %> 
+		<%= shows.price %>
+		<%= shows.description %>
+		</li>
+	<%end%>
+</ul>
 </div>
+
+<div>
+<p> <b> List of upcoming concerts </b> </p>
+<ul>
+
+	<% @concerts_upcoming.each do |shows| %>
+		<li>
+		<%= shows.artist %>
+		<%= shows.venue %> 
+		<%= shows.city %> 
+		<%= shows.date %> 
+		<%= shows.price %>
+		<%= shows.description %>
+		</li>
+	<%end%>
+</ul>
+</div>
+
+<div>
+<div class="col-sm-6 col-md-3">
+      <img src="/assets/epic_concert1.jpg" alt="Crowd of people 1" width="400" height="400">
+  </div>
+
+<div class="col-sm-6 col-md-3">
+      <img src="/assets/epic_concert2.jpg" alt="Crowd of people 2" width="400" height="400">
+</div>
+
+
+<div class="col-sm-6 col-md-3">
+      <img src="/assets/epic_concert3.jpg" alt="Crowd of people 3" width="400" height="400">
+    </a>
+</div>
+</div>
+
+<!-- <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+

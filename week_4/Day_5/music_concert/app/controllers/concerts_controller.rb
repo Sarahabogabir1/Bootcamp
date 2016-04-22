@@ -1,6 +1,7 @@
 class ConcertsController < ApplicationController
 	def index
-		@concerts = Concert.where(date: Time.now)
+		@concerts_today = Concert.where(date: Time.now.midnight)
+		@concerts_upcoming = Concert.where('date > ?',Time.now.midnight)
 		render 'index'
 	end 
 

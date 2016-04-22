@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :concerts #going to concerts controller
   get '/', to:'concerts#index'
 
-  get '/concerts/show/:id', to:'concerts#show'
+
+# alreay provided so I don't need it
+  # get '/concerts/show/:id', to:'concerts#show' 
 
 
 
@@ -27,7 +30,7 @@ Rails.application.routes.draw do
   #       get 'short'
   #       post 'toggle'
   #     end
-  #
+  # #
   #     collection do
   #       get 'sold'
   #     end
