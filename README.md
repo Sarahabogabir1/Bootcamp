@@ -16,3 +16,9 @@ Week 4: Ruby on Rails
 
 Week 5: Javascript
 Day 1: JQuary, callbacks and functions.
+
+Week 6: APIs
+
+Week 7:Final Project
+
+Week 8:Final Project
