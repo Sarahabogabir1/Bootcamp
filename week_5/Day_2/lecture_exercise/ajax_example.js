@@ -68,6 +68,9 @@ function displayCharacters (characters) {
         <p>Occupation: ${oneCharacter.occupation}</p>
       </li>`;
 
+      if album has image then render
+      if album does not image, just display name 
+
     $(".js-character-list").append(html);
   });
 }

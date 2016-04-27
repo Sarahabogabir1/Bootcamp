@@ -25,32 +25,26 @@ $(document).on("ready", function () {
 
 function displayInfo(the_array){
 	the_array.forEach(function(the_item){
-		var html = `
-		<li>
-			<p>Name: ${the_item.name}</p>
-		</li>`;
+		if (the_item.images.length > 0) {
+			var html = `
+			<li>
+				<p>Name: ${the_item.name}</p>
+				<img src="${the_item.images[0].url}" width="300px"
+			</li>`
+		} else {
+			var html = `
+			<li> 
+				<p>Name: ${the_item.name}</p>
+			</li>`
+		}
+		
 		$(".js-artist-list").append(html);
 	})
-
 }
 
 
 
-// //artist list
-//     $(".js-artist-list").on("--", . function (event) {
-//       	type: "GET"
-//       	url: "https://api.spotify.com/v1/search?type=artist&query=SEARCHTERM",
-//       	data: artist
 
-//     };
-
-// //album list
-//   $(".js-album-list").on("---", .function (event) {
-//       	type: "GET"
-//       	url: "https://api.spotify.com/v1/search?type=artist&query=SEARCHTERM",
-//       	data: album
-
-//     };
 
 
 
