@@ -3,10 +3,10 @@
 
 $(document).on("ready", function () {
 
-	$(".js-show-pokemon").on("click, function"(event) {
+	$(".js-show-pokemon").on("click", function(event) {
 		var $button = $(event.currentTarget);
 		var pokemonUri = $button.data("pokemon-uri");
-
+			console.log(pokemonUri);
 		var pokemon = new PokemonApp.Pokemon(pokemonUri);
 		pokemon.render();
 	});
@@ -19,35 +19,41 @@ $(document).on("ready", function () {
 
 	PokemonApp.Pokemon.prototype.render = function () {
 		console.log("Rendering Pokemon: #" + this.id);
-	}
+			
+			var self = this;
 		$.ajax({
 			url:"/api/pokemon/" + this.id,
 			success: function (response) {
+				self.info = response;
 				console.log("Pokemon info:");
-				console.log(response);
-			}
-		})
+				console.log(self.info);
 
+				$(".js-pkmn-name").text(self.info.name);
+				$(".js-pkmn-number").text(self.info.pkdx_id);
+				$(".js-pkmn-heigth").text(self.info.height);
+				$(".js-pkmn-weight").text(self.info.weight);
+				$(".js-pkmn-speed").text(self.info.speed);
+				$(".js-pkmn-sp_atk").text(self.info.sp_atk);
+				$(".js-pkmn-defense").text(self.info.defense);
+				$(".js-pkmn-image").image(self.info.picture);
+				$(".js-pokemon-modal").modal("show");
+			}
+		});
+
+	};
 
 	PokemonApp.Pokemon.idFromUri = function (pokemonUri) {
 		var uriSegments = pokemonUri.split("/");
-		var secondLast = uriSegments.lenght - 2;
+		var secondLast = uriSegments.length - 2;
 		return uriSegments[secondLast];
 	};
 
-	PokemonApp.Pokemon.prototype.render = function () {
-		console.log("Rendering pokemon: #" + this.id);
-
-		$.ajax ({
-			url:"/api/pokemon/" + this.id,
-			success: function (response) {
-				console.log("Pokemon info:");
-				console.log(response);
-			}
-		});
-	};
+//--------------------Display Images ------------------------//
+	function displayImage (image){
 
 
+		append.(html);
+		}
 
 
 

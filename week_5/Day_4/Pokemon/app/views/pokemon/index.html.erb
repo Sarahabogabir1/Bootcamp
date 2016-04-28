@@ -1,4 +1,4 @@
-<h1>Pokédex</h1>
+<h1>Pokédex </h1>
 
 <!-- List of pokemon -->
 <ul class="pokedex-list">
@@ -14,31 +14,55 @@
 
 
 <!-- Pokemon modal view (hidden at first) -->
-<div class="modal fade">
+<div class="modal fade js-pokemon-modal">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <div class="modal-header">
         <button class="close" data-dismiss="modal">
           <span>&times;</span>
-        </button>
-
+        </button> 
         <h3 class="modal-title">
-          <span>Feraligtr</span>
-          <small>#160</small>
+          <span class="js-pkmn-name">
+          Feraligtr
+          </span>
+          <small class="js-pkmn-number">
+          #160
+          </small>
         </h3>
-      </div><!-- .modal-header -->
+      </div>
 
+      <!-- .modal-header -->
       <div class="modal-body">
         <dl class="dl-horizontal">
           <dt>Height</dt>
-          <dd>23</dd>
-
+          <dd class="js-pkmn-height">23</dd>
+     <!--      <dd>23</dd> -->
           <dt>Weight</dt>
-          <dd>888</dd>
+          <dd class="js-pkmn-weight">888</dd>
+      <!--     <dd>888</dd> -->
+          <dt>Speed</dt>
+          <dd class="js-pkmn-speed">89</dd>
+
+          <dt>Speed Atack</dt>
+          <dd class="js-pkmn-sp_atk">89</dd>
+
+          <dt>Defense</dt>
+          <dd class="js-pkmn-defense">70</dd>
+
+         
+ 
         </dl>
       </div><!-- .modal-body -->
 
     </div><!-- .modal-content -->
   </div><!-- .modal-dialog -->
 </div><!-- .modal -->
+
+
+
+
+
+
+
+

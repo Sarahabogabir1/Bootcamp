@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require init
-//= require_tree .
+//= require_tree .   
+
+// tree require all the files in the JS folder
