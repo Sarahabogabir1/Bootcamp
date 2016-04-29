@@ -36,7 +36,19 @@ $(document).on("ready", function () {
 				$(".js-pkmn-sp_atk").text(self.info.sp_atk);
 				$(".js-pkmn-defense").text(self.info.defense);
 				$(".js-pkmn-image").image(self.info.picture);
+				
+				$.ajax({
+					url:getUri
+					sucess: function() {
+					console.log("Image is being displayed")
+				}
+				
+				})
+
+				//-----sending it to the html----//
 				$(".js-pokemon-modal").modal("show");
+
+
 			}
 		});
 
@@ -48,15 +60,16 @@ $(document).on("ready", function () {
 		return uriSegments[secondLast];
 	};
 
-//--------------------Display Images ------------------------//
-	function displayImage (image){
-
+//--------------------Get Uri ------------------------//
+	function getUri(image){
+		html = 
 
 		append.(html);
 		}
 
 
 
+//--------------------Get Uri ------------------------//
 
 
 
