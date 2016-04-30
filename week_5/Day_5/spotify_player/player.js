@@ -39,7 +39,12 @@ function displaySong(track){
 		$(".artists").text(track.artists[0].name) //name of artist
 		$(".js-image").prop('src',track.album.images[0].url)
 };
-//-----------Function to play track------------------------------------------------
+//-----------Audio playback------------------------------------------------
+	function playTrack(the_items)
+		console.log("Song is playing")
+
+
+	$('.js-player').trigger('play');
 
 
 
