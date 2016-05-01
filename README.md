@@ -23,6 +23,8 @@ Day 5: Spotify Player exercise
 
 Week 6: APIs
 
-Week 7:Final Project
+Week 7:Working on Final Project
 
-Week 8:Final Project
+Week 8:Working on Final Project and Final Presentation
+
+Week 9: Career Week and Work on Some Code
