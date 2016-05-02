@@ -17,7 +17,8 @@ class SandwichesController < ApplicationController
       return
     end
 
-    render json: sandwich
+    render json: {sandwich: sandwich, ingredients: sandwich.ingredients} 
+  
   end
 
   def update
