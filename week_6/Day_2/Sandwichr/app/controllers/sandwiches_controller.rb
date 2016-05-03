@@ -45,7 +45,6 @@ class SandwichesController < ApplicationController
 		sandwich
 	end
 
-
 	def sandwich_params
 		params.require(:sandwich)
 			.permit(:name, :bread_type)
