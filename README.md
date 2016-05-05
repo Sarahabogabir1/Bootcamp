@@ -25,6 +25,6 @@ Week 6: APIs
 
 Week 7:Working on Final Project
 
-Week 8:Working on Final Project and Final Presentation
+Week 8:Working on Final Project and Final Presentation.
 
-Week 9: Career Week and Work on Some Code
+Week 9: Career Week and Work on Some Code.
