@@ -6,6 +6,8 @@
 		<%= entry.hours %> h
 		<%= entry.minutes %> m -
 		<%= entry.date %>
+		<%= link_to "Edit", "/projects/#{@my_project.id}/ time_entries/#{entry.id}/edit" %>
+		<!-- #add it so its in the loop -->
 	</li>
 <% end %>
 

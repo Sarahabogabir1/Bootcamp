@@ -1,33 +1,36 @@
 Rails.application.routes.draw do
 
 	get '/', to: 'site#home' #site is a controller
-	
 	get '/contact', to: 'site#contact'
-	
 	get '/say_name/:name', to: 'site#say_name'
-	
 	get '/calculator', to: 'site#calculator'
-	
 	post '/calculate', to: 'site#calculate'
-
-  get '/projects', to: 'projects#index'
-
-  get '/projects/:id', to: 'projects#show'
-  #:id is equal to any number you decide to use
-  get '/projects/new', to: 'projects#new'
-
-  post '/projects', to: 'projects#create'
+  # get '/projects', to: 'projects#index'
+  # get '/projects/:id', to: 'projects#show'
+  # get '/projects/new', to: 'projects#new'
+  # post '/projects', to: 'projects#create'
   #will redirect to show page once user submits
 
-  get '/projects/:project_id/time_entries', to: 'time_entries#index' #last one has to match the controller
-  # that means time entries is nested within time projects
+  resource :projects, only: [:index, :show, :new, :create] do
+    resource :time_entries, except: [:show]
+  end 
 
-  get '/projects/:project_id/time_entries/new', to: 'time_entries#new' #add a new mathod  time entries controller
+# ---everything below was replaced with Resources--------BOOM!!
+  # get '/projects/:project_id/time_entries', to: 'time_entries#index' #last one has to match the controller
+  # # that means time entries is nested within time projects
 
-  post '/projects:project_id/time_entries/', to: 'time_entries#create', as: :project_time_entries #missing controller routes
+  # get '/projects/:project_id/time_entries/new', to: 'time_entries#new' #add a new mathod  time entries controller
+
+  # post '/projects:project_id/time_entries/', to: 'time_entries#create', as: :project_time_entries #missing controller routes
+
+  # get '/projects/:project_id/time_entries/:id/edit', to:"time_entries#edit"
+  #     #http://localhost:3000/projects/1/time_entries/1/edit
+  # patch '/projects/:project_id/time_entries/:id', to: 'time_entries#update', as: :project_time_entry
+
+  # delete '/projects/:project_id/time_entries/:id', to: 'time_entries#destroy'
 
 
-
+#_________________________________________________________________________________________________      
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

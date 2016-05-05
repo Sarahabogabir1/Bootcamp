@@ -1,29 +1,40 @@
 #link files with require_relative
-require_relative "lib/post.rb"
-##--->require_relative('lib/sponsored_post.rb')
-require_relative "lib/blog.rb"
+require_relative('lib/post.rb')
+require_relative('lib/blog.rb')
+# require_relative('lib/sponsored_post.rb')
+require "sinatra"
 
-#make a new post, here I am making an object with .new
-#and using-------> title, date, text
+time = Time.now 
 
-time = Time.now #live method in ruby
-
-post_1 = Post.new("Miami", time, "It is hot here and humid")
+post_1 = Post.new("Chile", time, "At the Atacama Dessert")
 #post 1 text
 #post description
 #method that belongs to the post
 
-post_2 = Post.new("Bangkok", time-10, "I ate Thai food today")
+post_2 = Post.new("Bangkok", time-10, "Eating Thai food by Wat Pho")
 #post description
 
-post_3 = Post.new("London", time-20, "I visited the queen today!")
+post_3 = Post.new("Siem Reap", time-20, "The city of the gods")
 #post description
 
-post_4 = Post.new("Santiago", time-30, "I ate empanadas")
+post_4 = Post.new("Miami", time-30, "In a programming bootcamp")
 #post description
-#need to have access to my class of Blog
+
+my_blog = Blog.new()
+# blog.add_post(post_1)
+# blog.add_post(post_2)
+# blog.add_post(post_3)
+# blog.add_post(post_4)
+
+get "/home" do
+	erb(:blog #?
+end
+#used when user will make a request to get page from server
+
+post "/list_of_post" do
+	erb(:post) #?
+	redirect to("/")
+end 
 
 
-my_blog = Blog.new([post_1, post_2, post_3, post_4])
 
-my_blog.display_post

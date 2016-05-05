@@ -16,7 +16,7 @@ class PasswordChecker
 	def check_char(password)
 		if password.match(/[a-zA-Z]/) && password.match(/[0-9]/) && password.match(/\W/)
 							#letters				#numbers	#testing characters, dont' need a range
-			true
+			trueß
 		else 
 			false
 		end 

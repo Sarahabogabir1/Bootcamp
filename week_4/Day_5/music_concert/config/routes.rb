@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :concerts #going to concerts controller
   get '/', to:'concerts#index'
 
+  
 
 # alreay provided so I don't need it
   # get '/concerts/show/:id', to:'concerts#show' 

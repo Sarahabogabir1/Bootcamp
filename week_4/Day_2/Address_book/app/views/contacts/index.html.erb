@@ -1,0 +1,17 @@
+
+<h> Store your contacts here!</h>
+
+<ul>
+	<% @contacts.each do |contact|%>
+		<li> 
+		<p> Name: <%= contact.name %> </p>
+		<p> address: <%= contact.address %> </p>
+		<p> phone_number: <%= contact.phone_number %> </p>
+		<p> email_address: <%= contact.email_address %> </p>
+		</li>
+	<%end%> 
+</ul>
+
+<p><b>Sign up here </b></p>
+
+
