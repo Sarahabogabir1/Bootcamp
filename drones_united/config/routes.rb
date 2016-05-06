@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+
+
+get '/', to:'static_pages#index'
+  # resources :index
+  
+  resources :location
+
+
+
+  # get '/', to: 'site#home'
+    # ‘/‘ = URI (relative path, what the user will type)
+    #        site = controller (tells everyone what to do)
+    #       home = action (for our reference)
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
