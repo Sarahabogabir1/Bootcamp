@@ -1,8 +1,8 @@
 class LocationController < ApplicationController
-	has many :categories
+	# has many :categories
 	
 	def index #to display all locations
-		@locations = Locations.all
-		render index
+		# @locations = Location
+		render "index"
 	end 
 end

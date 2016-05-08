@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
 
-get '/', to:'static_pages#index'
-  # resources :index
+# get '/', to:'static_pages#index'
+#   # resources :index
   
-  resources :location
+resources :location
 
-
+# resources :enter_location
 
   # get '/', to: 'site#home'
     # ‘/‘ = URI (relative path, what the user will type)
