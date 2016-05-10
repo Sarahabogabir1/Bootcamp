@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DronesUnited</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <title>Drones United</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+	<!-- font from google -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+	
+	<!-- Title main page "DRONES UNITED" -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
 
 <%= yield %>

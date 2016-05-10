@@ -3,8 +3,11 @@ Rails.application.routes.draw do
 
 # get '/', to:'static_pages#index'
 #   # resources :index
-  
+resources :home
+
 resources :location
+
+resources :user
 
 # resources :enter_location
 

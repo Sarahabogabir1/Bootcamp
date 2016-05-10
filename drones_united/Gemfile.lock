@@ -37,8 +37,12 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    autoprefixer-rails (6.3.6)
+      execjs
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     byebug (8.2.5)
     climate_control (0.0.3)
@@ -49,6 +53,10 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    geokit (1.10.0)
+    geokit-rails (2.1.0)
+      geokit (~> 1.5)
+      rails (>= 3.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -70,6 +78,7 @@ GEM
     mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mixitup_rails (0.0.3)
     multi_json (1.12.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -145,9 +154,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
+  bootstrap-sass (~> 3.2.0)
   byebug
+  geokit-rails
   jbuilder (~> 2.0)
   jquery-rails
+  mixitup_rails
   paperclip (~> 5.0.0.beta1)
   rails (= 4.2.6)
   sass-rails (~> 5.0)

@@ -1,5 +1,8 @@
-#-------first location
+#------- 1 location ----------------------------------------------------------------------------------------------
 Location.create(
+	lat: 25.7476542,
+	lng: -80.3748673,
+	user_level:1,
 	name:"FIU Fairgrounds Parking Lot",
 	address: "SW 114th ST and 108th AVE, Miami,Fl",
 	picture:"image goes here",
@@ -7,8 +10,11 @@ Location.create(
 		Just show up and fly, the park rangers are friendly, no problem in flying. People have been flying 
 		in this zone for many years." )
 
-#--------second location------------------------------------------------------------------------------------
+#-------- 2 location----------------------------------------------------------------------------------------------
 Location.create(
+	lat: 25.978605,
+	lng: -80.3328111,
+	user_level:2,
  	name: "Miramar National Park",
  	address: "Miramar Pkwy, Miramar, FL 33027",
  	pictures: "image goes here",
@@ -20,9 +26,12 @@ Location.create(
 	too if you need the smooth dirt to ROG and land, and another by the West entrance. Sometimes there 
 	are kids playing soccer, baseball and other activities which always come before RC flight.")
 
-#-------third location--------------------------------------------------------------------------------------
+#------- 3 location ----------------------------------------------------------------------------------------------
 
 Location.create(
+	lat: 26.5875088,
+	lng: -80.1301359,
+	user_level:1,
 	name:"Buttonwood Park",
 	address:"5300 Lantana Rd, Lake Worth",
 	picture:"image goes here",
@@ -31,18 +40,68 @@ Location.create(
 	 there is nobody there. You get all three football fields to yourself. 
  	The grass is cut very short so you can takeoff and land as if it were paved.")
 
-#------------Fourth location----------------------------------------------------------------------------------
+#------------ 4 location -----------------------------------------------------------------------------------------
 
 Location.create(
+	lat: 25.5105299,
+	lng: -80.1249429,
+	user_level: 3,
 	name:"Haulover Park Marina",
 	address:"13700 Collins Ave, Miami Beach, Fl",
-	picture:"picture goes here",
+	picture:"image goes here",
 	description:"Flying over South Beach is among the hottest spots. 
 	It is great for flying smaller to medium drones. 
 	This spot is great for the creative looking to expand their photography and film skills. 
 	It is recommended to fly during the weekdays because airspace is mostly dominated by kites
  	and other drones. If you fly during the weekend, proceed with caution.")
-#------------Fith location----------------------------------------------------------------------------------
+
+#------------ 5 location ---------------------------------------------------------------------------------------------
+
+Location.create(
+	lat: 25.3105299,
+	lng: -80.1249429,
+	user_level: 3,
+	name:"Brickell",
+	address:"Top of a building",
+	picture:"image goes here",
+	description:"Flying over Brickell will give you one of the best views. Possibly one of the best you will ever see.")
+
+#------------ 6 location ***FAKE  ------------------------------------------------------------------------------------
+
+Location.create(
+	lat: 25.2105299,
+	lng: -80.3249429,
+	user_level: 2,
+	name:"North of South Beach",
+	address:"Some other place in Brickell",
+	picture:"image goes here",
+	description:"Some areas are very populated with people and airplanes so you need to be careful.
+			Best to fly in the morning or at sunset")
+
+#------------ 7 location ***FAKE ----------------------------------------------------------------------------------
+Location.create(
+	lat: 25.2105299,
+	lng: -80.3249429,
+	user_level: 2,
+	name:"North of South Beach",
+	address:" blah blah",
+	picture:"image goes here",
+	description:"Some areas are very populated with people and airplanes so you need to be careful.
+			Best to fly in the morning or at sunset")
+
+#------------ 8 location ***FAKE ----------------------------------------------------------------------------------
+Location.create(
+	lat: 25.2105299,
+	lng: -80.3249429,
+	user_level: 3,
+	name:"Brickell by pier",
+	address:"blah blah",
+	picture:"image goes here",
+	description:"Some areas are very populated with people and airplanes so you need to be careful.
+			Best to fly in the morning or at sunset")
+
+#-----------------------------------------------------------------------------------------------------------------
+
 
 
 # This file should contain all the record creation needed to seed the database with its default values.

@@ -1,3 +1,2 @@
-class Location < ActiveRecord::Base
-	
+class Location < ActiveRecord::Base 
 end
