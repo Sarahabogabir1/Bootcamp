@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   #so user can write review
   resources :review
+  # root 'home#index'
   
 # resources :enter_location
 
