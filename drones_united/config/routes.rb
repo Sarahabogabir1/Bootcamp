@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  
+  resources :home
+  
+  resources :location
 
-# get '/', to:'static_pages#index'
-#   # resources :index
-resources :home
-
-resources :location
-
-resources :user
-
+  resources :about
+  
 # resources :enter_location
 
   # get '/', to: 'site#home'
@@ -70,4 +69,5 @@ resources :user
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+end 
+

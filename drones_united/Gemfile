@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'devise'
 #What I have added to the project
 gem "paperclip", "~> 5.0.0.beta1"
 
@@ -20,11 +21,12 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 
  gem 'mixitup_rails'
+ 
  gem 'bootstrap-sass', '~> 3.2.0'
+ 
  gem 'autoprefixer-rails'
 
  gem 'geokit-rails'
-
 
 # gem 'turbolinks'
 # gem 'turbolinks'

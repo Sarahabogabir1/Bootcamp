@@ -5,7 +5,7 @@ Location.create(
 	user_level:1,
 	name:"FIU Fairgrounds Parking Lot",
 	address: "SW 114th ST and 108th AVE, Miami,Fl",
-	picture:"image goes here",
+	picture:"drone_pic.jpg",
 	description:"Description: You can find over a dozen pilots during the weekends early in the morning. 
 		Just show up and fly, the park rangers are friendly, no problem in flying. People have been flying 
 		in this zone for many years." )
@@ -17,7 +17,7 @@ Location.create(
 	user_level:2,
  	name: "Miramar National Park",
  	address: "Miramar Pkwy, Miramar, FL 33027",
- 	pictures: "image goes here",
+ 	picture: "miami_city.jpg",
  	description:"Description: Recreation area with pools, a water park, picnic areas, athletic 
  	fields & lakeside walking trails.Miramar is relatively new (built in 2007). On Saturday and 
  	Sunday the cost is: $1.50 per person, and it’s free on weekdays. Best time to fly is weekdays during school hours. 
@@ -34,7 +34,7 @@ Location.create(
 	user_level:1,
 	name:"Buttonwood Park",
 	address:"5300 Lantana Rd, Lake Worth",
-	picture:"image goes here",
+	picture:"buttonwood.jpg",
 	description:"Three football fields worth of space. It usually has soccer or 
 	football being played in the evenings and weekends. During school hours on weekdays
 	 there is nobody there. You get all three football fields to yourself. 
@@ -48,7 +48,7 @@ Location.create(
 	user_level: 3,
 	name:"Haulover Park Marina",
 	address:"13700 Collins Ave, Miami Beach, Fl",
-	picture:"image goes here",
+	picture:"south_beach.jpg",
 	description:"Flying over South Beach is among the hottest spots. 
 	It is great for flying smaller to medium drones. 
 	This spot is great for the creative looking to expand their photography and film skills. 
@@ -63,7 +63,7 @@ Location.create(
 	user_level: 3,
 	name:"Brickell",
 	address:"Top of a building",
-	picture:"image goes here",
+	picture:"brickell_1.jpg",
 	description:"Flying over Brickell will give you one of the best views. Possibly one of the best you will ever see.")
 
 #------------ 6 location ***FAKE  ------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ Location.create(
 	user_level: 2,
 	name:"North of South Beach",
 	address:"Some other place in Brickell",
-	picture:"image goes here",
+	picture:"south_beach.jpg",
 	description:"Some areas are very populated with people and airplanes so you need to be careful.
 			Best to fly in the morning or at sunset")
 
@@ -84,8 +84,8 @@ Location.create(
 	lng: -80.3249429,
 	user_level: 2,
 	name:"North of South Beach",
-	address:" blah blah",
-	picture:"image goes here",
+	address:"blah blah",
+	picture:"drone_pic.jpg",
 	description:"Some areas are very populated with people and airplanes so you need to be careful.
 			Best to fly in the morning or at sunset")
 
@@ -96,7 +96,7 @@ Location.create(
 	user_level: 3,
 	name:"Brickell by pier",
 	address:"blah blah",
-	picture:"image goes here",
+	picture:"brickell-avenue.jpg",
 	description:"Some areas are very populated with people and airplanes so you need to be careful.
 			Best to fly in the morning or at sunset")
 

@@ -1,57 +1,49 @@
-// Place all the styles related to the home controller here.
-
-
-h1 { 
-  font-family: 'Raleway', sans-serif;
-  font-size: 90;
-  font-color: white;
-  font-position: center;
-}
-
-h2 {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  font-size: 20px;
-  font-style: normal;
-  font-variant: normal;
-  // font-weight: bold;
-  line-height: 38.5px;
-}
-
-
-.background {
-    background: url('pattern.png');
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
-    opacity: 0.3;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-}
-
-.video-overlay {
-  background-color: rgba(0,0,0,0.8s);
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -99;
-}
-
-.video {
-  background-size:cover;
-}
-
-/* Making text align */
-main {
+main{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.title_wrapper{
+  padding:30px 20px;
+  background-color: rgba(0,0,0,0.5);
+  margin-left:auto; 
+  margin-right:auto; 
+}
+
+.index_title { 
+  font-family: 'Russo One'; 
+  color: white;
+  font-size: 80px;
+  font-weight: bold; 
+  font-position: center;
+}
+
+.index_motto {
+  font-family: Raleway;
+  color:#fff;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 38.5px;
+}
+
+.background {
+    background: url('pattern.png');
+    background-repeat: repeat;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -8;
+}
+
+.video {
+  background-size:cover;
+  background-position:bottom;
+
 }
 
 element.style {
@@ -68,4 +60,23 @@ element.style {
   width: 100%; 
 }
 
+body {
+  font-family: 'Raleway';
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin: 0;
+}
 
+
+.video-overlay {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+}
