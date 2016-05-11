@@ -2,14 +2,10 @@ create the form here so the user can submit their information -->
 <!-- form for  -->
 <h1> Leave your review </h1>
 
-
-<%= form_for(@reviews) do |form| %>
-  <%= form.text_field :name %>
-  <%= form.number_field :rating %>
-  <%= form.text_field :comment %>
-  <%= form.submit "Submit" %>
+<%=form_for(@reviews) do |f| %>
+<%= f.text_field :name %>
+<%= f.number_field :rating %>
+<%= f.text_field :comment %>
+<%= f.submit "Submit" %>
 <% end %>
-
-
-
 
