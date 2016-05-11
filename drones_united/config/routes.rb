@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   resources :location
 
   resources :about
+
+  #so user can write review
+  resources :review
   
 # resources :enter_location
 
