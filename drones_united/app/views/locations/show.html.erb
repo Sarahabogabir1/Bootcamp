@@ -1,13 +1,15 @@
+<!-- Button to go back  -->
+<%= link_to 'Back',locations_path %> <br>
 
-<h1>About this location</h1>
 
-<%= @location.name%><br>
+<%=@location.name%> <br>
+
+<img src="/assets/<%= @location.picture%>" width="600"> <br>
+
 
 <%= @location.address%><br>
 
-<%= @location.description%><br>
-
-<%= @location.picture%><br>
+<%= @location.description%><br> 
 
 <!-- Rendering index page for testing -->
 <%= render "reviews/index" %>
