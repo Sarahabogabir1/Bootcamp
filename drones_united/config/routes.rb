@@ -1,16 +1,17 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  
-  resources :home
-  
-  resources :location
+  get '/' => '_home#index'
+  get '/about' => 'about#show'
 
-  resources :about
+  # resources :home
+  
+  resources :locations
 
-  #so user can write review
-  resources :review
-  # root 'home#index'
+  # resources :about
+
+  resources :reviews
+
   
 # resources :enter_location
 

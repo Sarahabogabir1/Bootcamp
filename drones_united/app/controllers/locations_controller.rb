@@ -1,4 +1,4 @@
-class LocationController < ApplicationController
+class LocationsController < ApplicationController
 	# has many :categories
 	
 	def index #to display all locations
@@ -8,6 +8,8 @@ class LocationController < ApplicationController
 	def show
 		#render location 
 		@location = Location.find(params[:id])	
+		@locationreviews = @location.reviews
+		@review= Review.new
 	end
 
 end
